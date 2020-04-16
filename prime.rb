@@ -3,7 +3,7 @@ def prime?(integer)
   i = 2
   if integer > 1
     range = (start..integer - 1).to_a
-    range.any? { |i| integer % i == 0}
+    range.none? { |i| integer % i == 0}
   end
   false
 end
