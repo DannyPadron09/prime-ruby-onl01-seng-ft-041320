@@ -1,8 +1,8 @@
 def prime?(integer)
   #a boolean whether integer is prime
-  i = 2
+  first = 2
   if integer > 1
-    range = (i..integer - 1).to_a
+    range = (first..integer - 1).to_a
     range.none? do |i|
       integer % i == 0
     end
