@@ -1,4 +1,4 @@
-def prime(integer)
+def prime?(integer)
   #a boolean whether integer is prime
   i = 2
   while i < integer
