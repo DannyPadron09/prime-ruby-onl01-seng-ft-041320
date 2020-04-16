@@ -5,7 +5,7 @@ def prime?(integer)
     range = (start..integer - 1).to_a
     range.none? do |i|
       integer % i == 0
-  end
+    end
   else
     false
   end
