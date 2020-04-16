@@ -1,9 +1,9 @@
 def prime?(integer)
   #a boolean whether integer is prime
-  i = 2 
-  while i < integer
-    return false if integer % i == 0
-    i += 1
+  i = 2
+  if integer > 1
+    range = (start..integer - 1).to_a
+    range.any? { |i| integer % i == 0}
   end
-  true
+  false
 end
